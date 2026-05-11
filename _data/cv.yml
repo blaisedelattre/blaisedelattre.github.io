@@ -19,7 +19,7 @@ cv:
     Education:
       - institution: Université Paris-Dauphine PSL — MILES, LAMSADE
         location: Paris, France
-        url: https://www.lamsade.dauphine.fr/
+        url: https://miles.lamsade.fr/
         area: Lipschitz-constrained neural networks & certified robustness
         studyType: PhD
         endDate: "2025-06-20"

@@ -29,7 +29,7 @@ latest_posts:
 
 I am a postdoctoral researcher in [Prof. Yang Cao](https://yangcao888.github.io/)'s group at the [Institute of Science Tokyo](https://www.isct.ac.jp/en), Japan. My research focuses on **trustworthy AI**, with an emphasis on certified robustness, randomized smoothing, Lipschitz-controlled neural networks, and robust foundation-model systems.
 
-I completed my PhD at MILES, LAMSADE, Université Paris-Dauphine PSL, under the supervision of [Prof. Alexandre Allauzen](https://allauzen.github.io/) and Dr. Quentin Barthélemy. My doctoral work focused on **Lipschitz-constrained neural networks and certified robustness**.
+I completed my PhD at [MILES](https://miles.lamsade.fr/), [LAMSADE](https://www.lamsade.dauphine.fr/), Université Paris-Dauphine PSL, under the supervision of [Prof. Alexandre Allauzen](https://allauzen.github.io/) and Dr. Quentin Barthélemy. My doctoral work focused on **Lipschitz-constrained neural networks and certified robustness**.
 
 **Research interests:** Certified Robustness and Trustworthy AI · Lipschitz Networks and Randomized Smoothing · Robust Foundation Models · Stable and Efficient Deep Learning.
 
