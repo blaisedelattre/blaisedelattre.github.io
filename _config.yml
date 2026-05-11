@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: blank # special al-folio sentinel — templates use first_name + last_name (with bold first name)
 first_name: Blaise
 middle_name:
 last_name: Delattre
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Blaise Delattre — postdoctoral researcher at the Institute of Science Tokyo, working on trustworthy AI: certified robustness, randomized smoothing, Lipschitz-controlled neural networks, and robust foundation-model systems.
+  Personal website of Blaise Delattre — postdoctoral researcher at Science Tokyo working on trustworthy AI and certified robustness.
 footer_text: >
   © Blaise Delattre. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> + <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Blaise Delattre, certified robustness, randomized smoothing, Lipschitz neural networks, trustworthy AI, foundation models, Science Tokyo, LAMSADE, Dauphine
