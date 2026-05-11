@@ -1,34 +1,44 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Coauthors — keys are lowercased last names matching the surnames in papers.bib.
+# Used by jekyll-scholar / al-folio bib templates to hyperlink coauthor names.
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"allauzen":
+  - firstname: ["Alexandre", "A."]
+    url: https://allauzen.github.io/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"barthélemy":
+  - firstname: ["Quentin", "Q."]
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"barthelemy":
+  - firstname: ["Quentin", "Q."]
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"araujo":
+  - firstname: ["Alexandre", "A."]
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"caillon":
+  - firstname: ["Paul", "P."]
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"fagnou":
+  - firstname: ["Erwan", "E."]
+    url: https://erwanfagnou.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"meunier":
+  - firstname: ["Laurent", "L."]
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"havens":
+  - firstname: ["Aaron", "A."]
+
+"hu":
+  - firstname: ["Bin", "B."]
+
+"cao":
+  - firstname: ["Yang", "Y."]
+    url: https://yangcao888.github.io/
+
+"vérine":
+  - firstname: ["Alexandre", "A."]
+
+"verine":
+  - firstname: ["Alexandre", "A."]
+
+"delattre":
+  - firstname: ["Sylvain", "S."]

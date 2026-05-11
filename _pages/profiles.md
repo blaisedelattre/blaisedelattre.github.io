@@ -3,7 +3,8 @@ layout: profiles
 permalink: /people/
 title: people
 description: members of the lab or group
-nav: true
+nav: false       # hidden — re-enable for a lab / group members page once real profiles are added
+published: false # hidden — re-enable for a lab / group members page once real profiles are added
 nav_order: 7
 
 profiles:

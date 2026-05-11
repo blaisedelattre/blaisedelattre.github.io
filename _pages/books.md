@@ -3,6 +3,7 @@ layout: book-shelf
 title: bookshelf
 permalink: /books/
 nav: false
+published: false # hidden — no real book entries; re-enable once _books/ has real content
 collection: books
 ---
 

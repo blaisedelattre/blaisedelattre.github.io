@@ -2,14 +2,20 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Course materials, slides, and tutorials.
 nav: true
 nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+## Course material
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+**IASD Master (M2) — Adversarial Examples and Robust Machine Learning**
+[Slides (PDF)](/assets/teaching/Adversarial_examples_IASD_Exec_2025.pdf) · [Practical session notebooks](/assets/teaching/Adv_examples.zip)
 
-{% include courses.liquid %}
+**IASD Master (M2) — Database Privacy in Modern Computer Science**
+[Slides (PDF)](/assets/teaching/Presentation_Database_Privacy_Executive_Master_2025.pdf) · [Practical session notebooks](/assets/teaching/Database_privacy.zip)
+
+## Invited talks and tutorials
+
+**Tutorial — Robust Certificates for Neural Networks** (ADC 2025, Bali)
+[Slides (PDF)](/assets/teaching/tutorial_certified_robustness_ADC_conf_2025.pdf)
