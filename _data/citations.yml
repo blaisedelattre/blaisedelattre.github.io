@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-13'
+  last_updated: '2026-05-15'
 papers:
   0SNA45sAAAAJ:0EnyYjriUFMC:
     citations: 1
@@ -9,8 +9,12 @@ papers:
     citations: 31
     title: Efficient Bound of Lipschitz Constant for Convolutional Layers by Gram Iteration
     year: '2023'
+  0SNA45sAAAAJ:8k81kl-MbHgC:
+    citations: 0
+    title: Certified Robustness under Heterogeneous Perturbations via Hybrid Randomized Smoothing
+    year: '2026'
   0SNA45sAAAAJ:9yKSN-GCB0IC:
-    citations: 95
+    citations: 96
     title: A unified algebraic perspective on lipschitz neural networks
     year: '2023'
   0SNA45sAAAAJ:LkGwnXOMwfcC:
@@ -30,7 +34,7 @@ papers:
     title: 'Trading Complexity for Expressivity: Theoretical Exploration of Linear and Causal Token Mixing Strategies'
     year: Unknown Year
   0SNA45sAAAAJ:W7OEmFMy1HYC:
-    citations: 3
+    citations: 4
     title: Accelerated Training through Iterative Gradient Propagation Along the Residual Path
     year: '2025'
   0SNA45sAAAAJ:Y0pCki6q_DkC:
