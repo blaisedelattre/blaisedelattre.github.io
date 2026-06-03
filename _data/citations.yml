@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-05-15'
+  last_updated: '2026-06-03'
 papers:
   0SNA45sAAAAJ:0EnyYjriUFMC:
     citations: 1
     title: Scaling Direct Feedback Learning with Theoretical Guarantees
     year: '2026'
   0SNA45sAAAAJ:2osOgNQ5qMEC:
-    citations: 31
+    citations: 32
     title: Efficient Bound of Lipschitz Constant for Convolutional Layers by Gram Iteration
     year: '2023'
   0SNA45sAAAAJ:8k81kl-MbHgC:
@@ -14,7 +14,7 @@ papers:
     title: Certified Robustness under Heterogeneous Perturbations via Hybrid Randomized Smoothing
     year: '2026'
   0SNA45sAAAAJ:9yKSN-GCB0IC:
-    citations: 96
+    citations: 97
     title: A unified algebraic perspective on lipschitz neural networks
     year: '2023'
   0SNA45sAAAAJ:LkGwnXOMwfcC:
@@ -38,11 +38,11 @@ papers:
     title: Accelerated Training through Iterative Gradient Propagation Along the Residual Path
     year: '2025'
   0SNA45sAAAAJ:Y0pCki6q_DkC:
-    citations: 5
+    citations: 6
     title: Chain and Causal Attention for Efficient Entity Tracking
     year: '2024'
   0SNA45sAAAAJ:YsMSGLbcyi4C:
-    citations: 1
+    citations: 2
     title: Bridging the Theoretical Gap in Randomized Smoothing
     year: '2025'
   0SNA45sAAAAJ:_FxGoFyzp5QC:
@@ -58,7 +58,7 @@ papers:
     title: Globally 1-Lipschitz Attention Without Sequence-Length Dependence
     year: Unknown Year
   0SNA45sAAAAJ:qjMakFHDy7sC:
-    citations: 7
+    citations: 8
     title: The Lipschitz-Variance-Margin Tradeoff for Enhanced Randomized Smoothing
     year: '2024'
   0SNA45sAAAAJ:roLk4NBRz8UC:
@@ -66,6 +66,6 @@ papers:
     title: On the Stability of Neural Networks in Deep Learning
     year: '2025'
   0SNA45sAAAAJ:u5HHmVD_uO8C:
-    citations: 82
+    citations: 84
     title: A Dynamical System Perspective for Lipschitz Neural Networks
     year: '2022'
