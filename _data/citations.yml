@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-03'
+  last_updated: '2026-06-12'
 papers:
   0SNA45sAAAAJ:0EnyYjriUFMC:
     citations: 1
@@ -14,13 +14,17 @@ papers:
     title: Certified Robustness under Heterogeneous Perturbations via Hybrid Randomized Smoothing
     year: '2026'
   0SNA45sAAAAJ:9yKSN-GCB0IC:
-    citations: 97
+    citations: 96
     title: A unified algebraic perspective on lipschitz neural networks
     year: '2023'
   0SNA45sAAAAJ:LkGwnXOMwfcC:
     citations: 0
     title: "Attention Cha\xEEn\xE9e et Causale pour un Suivi Efficace des Entit\xE9s"
     year: '2025'
+  0SNA45sAAAAJ:MXK_kJrjxJIC:
+    citations: 0
+    title: Trading Complexity for Expressivity Through Structured Generalized Linear Token Mixing
+    year: '2026'
   0SNA45sAAAAJ:Se3iqnhoufwC:
     citations: 0
     title: Forward Only Learning for Orthogonal Neural Networks of Any Depth
@@ -29,16 +33,12 @@ papers:
     citations: 3
     title: Spectral norm of convolutional layers with circular and zero paddings
     year: '2024'
-  0SNA45sAAAAJ:UebtZRa9Y70C:
-    citations: 0
-    title: 'Trading Complexity for Expressivity: Theoretical Exploration of Linear and Causal Token Mixing Strategies'
-    year: Unknown Year
   0SNA45sAAAAJ:W7OEmFMy1HYC:
     citations: 4
     title: Accelerated Training through Iterative Gradient Propagation Along the Residual Path
     year: '2025'
   0SNA45sAAAAJ:Y0pCki6q_DkC:
-    citations: 6
+    citations: 7
     title: Chain and Causal Attention for Efficient Entity Tracking
     year: '2024'
   0SNA45sAAAAJ:YsMSGLbcyi4C:
@@ -66,6 +66,6 @@ papers:
     title: On the Stability of Neural Networks in Deep Learning
     year: '2025'
   0SNA45sAAAAJ:u5HHmVD_uO8C:
-    citations: 84
+    citations: 83
     title: A Dynamical System Perspective for Lipschitz Neural Networks
     year: '2022'
