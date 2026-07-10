@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-29'
+  last_updated: '2026-07-10'
 papers:
   0SNA45sAAAAJ:0EnyYjriUFMC:
     citations: 1
     title: Scaling Direct Feedback Learning with Theoretical Guarantees
     year: '2026'
   0SNA45sAAAAJ:2osOgNQ5qMEC:
-    citations: 32
+    citations: 33
     title: Efficient Bound of Lipschitz Constant for Convolutional Layers by Gram Iteration
     year: '2023'
   0SNA45sAAAAJ:8k81kl-MbHgC:
@@ -34,11 +34,11 @@ papers:
     title: Spectral norm of convolutional layers with circular and zero paddings
     year: '2024'
   0SNA45sAAAAJ:W7OEmFMy1HYC:
-    citations: 4
+    citations: 5
     title: Accelerated Training through Iterative Gradient Propagation Along the Residual Path
     year: '2025'
   0SNA45sAAAAJ:Y0pCki6q_DkC:
-    citations: 7
+    citations: 8
     title: Chain and Causal Attention for Efficient Entity Tracking
     year: '2024'
   0SNA45sAAAAJ:YsMSGLbcyi4C:
