@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-10'
+  last_updated: '2026-07-13'
 papers:
   0SNA45sAAAAJ:0EnyYjriUFMC:
     citations: 1
@@ -38,7 +38,7 @@ papers:
     title: Accelerated Training through Iterative Gradient Propagation Along the Residual Path
     year: '2025'
   0SNA45sAAAAJ:Y0pCki6q_DkC:
-    citations: 8
+    citations: 9
     title: Chain and Causal Attention for Efficient Entity Tracking
     year: '2024'
   0SNA45sAAAAJ:YsMSGLbcyi4C:
