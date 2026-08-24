@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-05'
+  last_updated: '2026-08-24'
 papers:
   0SNA45sAAAAJ:0EnyYjriUFMC:
     citations: 2
@@ -14,13 +14,9 @@ papers:
     title: Certified Robustness under Heterogeneous Perturbations via Hybrid Randomized Smoothing
     year: '2026'
   0SNA45sAAAAJ:9yKSN-GCB0IC:
-    citations: 95
+    citations: 99
     title: A unified algebraic perspective on lipschitz neural networks
     year: '2023'
-  0SNA45sAAAAJ:LkGwnXOMwfcC:
-    citations: 0
-    title: "Attention Cha\xEEn\xE9e et Causale pour un Suivi Efficace des Entit\xE9s"
-    year: '2025'
   0SNA45sAAAAJ:MXK_kJrjxJIC:
     citations: 0
     title: Trading Complexity for Expressivity Through Structured Generalized Linear Token Mixing
@@ -57,6 +53,10 @@ papers:
     citations: 0
     title: Globally 1-Lipschitz Attention Without Sequence-Length Dependence
     year: Unknown Year
+  0SNA45sAAAAJ:kNdYIx-mwKoC:
+    citations: 0
+    title: 'SynChain: Inducing Computer-Use Agent Systems to Construct Their Own Attack Chains'
+    year: '2026'
   0SNA45sAAAAJ:qjMakFHDy7sC:
     citations: 7
     title: The Lipschitz-Variance-Margin Tradeoff for Enhanced Randomized Smoothing
