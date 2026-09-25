@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a **JSPS Postdoctoral Fellow** in [Prof. Yang Cao](https://yangcao888.github.io/)'s group at the [Institute of Science Tokyo](https://www.isct.ac.jp/en), Japan. My research focuses on **trustworthy AI**, with an emphasis on certified robustness, randomized smoothing, Lipschitz-controlled neural networks, and robust foundation-model systems.
+I am a JSPS Postdoctoral Fellow in [Prof. Yang Cao](https://yangcao888.github.io/)'s group at the [Institute of Science Tokyo](https://www.isct.ac.jp/en), Japan. My research focuses on **trustworthy AI**, with an emphasis on certified robustness, randomized smoothing, Lipschitz-controlled neural networks, and robust foundation-model systems.
 
 I completed my PhD at [MILES](https://miles.lamsade.fr/), [LAMSADE](https://www.lamsade.dauphine.fr/), Université Paris-Dauphine PSL, under the supervision of [Prof. Alexandre Allauzen](https://allauzen.github.io/) and Dr. Quentin Barthélemy. My doctoral work focused on **Lipschitz-constrained neural networks and certified robustness**.
 
