@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**SPReAD grant** — I have been awarded a grant under MEXT's SPReAD (Supporting Pioneering Research through AI for 1,000 Discovery challenges) program for AI for Science.
+**SPReAD grant** — I have been awarded a grant under [MEXT's SPReAD](https://www.mext.go.jp/aifors_spread/) (Supporting Pioneering Research through AI for 1,000 Discovery challenges) program for AI for Science.
