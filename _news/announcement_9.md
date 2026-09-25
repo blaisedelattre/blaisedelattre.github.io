@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**NeurIPS 2026** — My paper "Joint Certification for Attributed Graphs: Beyond Topology-Only Robustness" has been accepted.
+**NeurIPS 2026** — Our paper "Joint Certification for Attributed Graphs: Beyond Topology-Only Robustness" has been accepted.
