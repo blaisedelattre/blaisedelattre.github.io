@@ -1,0 +1,210 @@
+%==============================================================================
+%  CV — Blaise Delattre
+%  Layout inspired by Martin Gubri's academic CV (year-on-left, ruled headers).
+%  Compile with: latexmk -pdf -jobname=cv_Blaise_Delattre main_cv.tex
+%
+%  Icons: uses fontawesome5 if installed, otherwise falls back to short text
+%  labels, so this file compiles even on a minimal TeX distribution.
+%==============================================================================
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.9cm,top=1.6cm,bottom=1.6cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
+%------------------------------------------------------------------ colours ----
+\definecolor{accent}{HTML}{2A4B7C}   % section / name colour — change to taste
+\definecolor{dategray}{HTML}{555555}
+
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+
+%-------------------------------------------------------- graceful FA icons ----
+\IfFileExists{fontawesome5.sty}{%
+  \usepackage{fontawesome5}%
+  \newcommand{\iEmail}{\faEnvelope}%
+  \newcommand{\iWeb}{\faGlobe}%
+  \newcommand{\iScholar}{\faGraduationCap}%
+  \newcommand{\iGithub}{\faGithub}%
+  \newcommand{\iLinkedin}{\faLinkedin}%
+  \newcommand{\iLoc}{\faMapMarker*}%
+}{%
+  % --- fallbacks if fontawesome5 is not installed ---
+  \newcommand{\iEmail}{\textbf{email:}}%
+  \newcommand{\iWeb}{\textbf{web:}}%
+  \newcommand{\iScholar}{\textbf{scholar:}}%
+  \newcommand{\iGithub}{\textbf{github:}}%
+  \newcommand{\iLinkedin}{\textbf{in:}}%
+  \newcommand{\iLoc}{}%
+}
+
+%--------------------------------------------------------- section styling ----
+\titleformat{\section}
+  {\large\bfseries\color{accent}}{}{0em}{}[\vspace{1pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\titleformat{\subsection}[runin]
+  {\bfseries}{}{0em}{}[\;]
+\titlespacing*{\subsection}{0pt}{4pt}{4pt}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+%------------------------------------------------------- entry helper macro ----
+% \cv{<left col, e.g. dates>}{<right col content>}
+% Uses two top-aligned minipages so that \\ inside #2 is a line break
+% (not a table-row break).
+\newcommand{\cv}[2]{%
+  \noindent\begin{minipage}[t]{0.135\textwidth}%
+    \strut\raggedright\small\color{dategray} #1%
+  \end{minipage}%
+  \hspace{0.015\textwidth}%
+  \begin{minipage}[t]{0.845\textwidth}%
+    \strut #2%
+  \end{minipage}\par\vspace{5pt}%
+}
+
+% keyword line
+\newcommand{\keywords}[1]{\par\vspace{2pt}{\small\textit{Keywords:} #1}}
+
+%==============================================================================
+\begin{document}
+
+%--------------------------------------------------------------- header --------
+{\Huge\bfseries\color{accent} Blaise Delattre}\\[2pt]
+{\large JSPS Postdoctoral Fellow in Trustworthy AI}\\[2pt]
+{\color{dategray}\iLoc{} Institute of Science Tokyo (Science Tokyo) — Tokyo, Japan}\\[6pt]
+
+\begin{tabular}{@{}l@{\hspace{1.5em}}l@{}}
+    \iEmail{}~\href{mailto:bldelattre@gmail.com}{bldelattre@gmail.com}                          &
+    \iWeb{}~\href{https://blaisedelattre.github.io/}{blaisedelattre.github.io}                  \\[3pt]
+    \iScholar{}~\href{https://scholar.google.com/citations?user=0SNA45sAAAAJ\&hl=fr}{Google Scholar} &
+    \iGithub{}~\href{https://github.com/blaisedelattre}{github.com/blaisedelattre}              \\[3pt]
+    \multicolumn{2}{@{}l@{}}{\iLinkedin{}~\href{https://www.linkedin.com/in/blaise-delattre-50192714b/}{linkedin.com/in/blaise-delattre}} \\
+\end{tabular}
+
+%---------------------------------------------------- research interests -------
+\section{Research Interests}
+Certified robustness and trustworthy AI; Lipschitz-constrained neural networks;
+randomized smoothing; stability and efficiency in deep learning; robust foundation
+and multimodal models.
+
+%----------------------------------------------------- academic positions -----
+\section{Academic \& Research Positions}
+\cv{2026–Present}{\textbf{JSPS Postdoctoral Fellow}, Institute of Science Tokyo, Tokyo, Japan.\\
+    Theory and methods for certified robustness of multimodal AI systems. Host: Assoc.\ Prof.\ Yang Cao.}
+\cv{2025–2026}{\textbf{Post-doctoral Researcher}, Institute of Science Tokyo, Tokyo, Japan.\\
+    Provable robustness and trustworthiness of foundation models. Supervisor: Assoc.\ Prof.\ Yang Cao.}
+\cv{2022–2025}{\textbf{Research Scientist (CIFRE)}, Foxstream, Lyon, France.\\
+    Robust deep learning for computer-vision applications (concurrent with PhD).}
+\cv{2021}{\textbf{Research Intern}, Université Paris-Dauphine PSL, Paris, France.}
+\cv{2019–2020}{\textbf{BNP Paribas}, Paris, France. Research Intern $\rightarrow$ Quantitative Analyst.}
+
+%-------------------------------------------------------------- education ------
+\section{Education}
+\cv{2022–2025}{\textbf{PhD in Computer Science}, Université Paris-Dauphine PSL, Paris, France.\\
+    Supervisors: Alexandre Allauzen, Quentin Barthélemy. Defended 20 June 2025.\\
+    Jury: Francis Bach (Chair), Rémi Gribonval, Audrey Repetti, Claire Boyer, Franck Mamalet.}
+\cv{2020–2021}{\textbf{Master 2 MASH} (Mathematics, Learning and Data Science),\\
+    Université Paris-Dauphine \& ENS Ulm PSL — joint PSL degree.}
+\cv{2016–2019}{\textbf{MSc in Financial Engineering \& Quantitative Finance},\\
+    Ensimag Grenoble INP \& IAE Grenoble, Grenoble, France.}
+
+%---------------------------------------------------- awards & distinctions ----
+\section{Awards \& Distinctions}
+% FY2026 second open call: https://www.jsps.go.jp/english/e-fellow/e-ippan/adoption/2026.html
+% Fellow listed on p. 11: https://www.jsps.go.jp/file/storage/saiyo_2026/2026_2-e.pdf
+\cv{2026}{\textbf{JSPS Postdoctoral Fellowship for Research in Japan (Standard)}.\\
+    FY2026 second recruitment: \href{https://www.jsps.go.jp/english/e-fellow/e-ippan/adoption/2026.html}{5.6\% acceptance rate} (125 selected from 2,231 applications).}
+\cv{2025}{ICLR \emph{oral} (top $\sim$1–2\%): \textit{Accelerated Training through Iterative Gradient Propagation Along the Residual Path}.}
+\cv{2023}{ICLR \emph{spotlight} (top $\sim$5\%): \textit{A Unified Algebraic Perspective on Lipschitz Neural Networks}.}
+\cv{2022}{ICML \emph{oral} (top $\sim$1–2\%): \textit{A Dynamical System Perspective for Lipschitz Neural Networks}.}
+% \cv{20XX}{[PLACEHOLDER: scholarships / fellowships / best-paper awards]}
+
+%----------------------------------------------------------- publications ------
+\newpage
+\section{Publications}
+{\small $^{*}$ denotes equal contribution.}
+\vspace{6pt}
+
+\cv{NeurIPS 2026}{\textbf{B.\ Delattre}$^{*}$, H.\ Wu$^{*}$, W.Y.B.\ Lim, Y.\ Cao. \textit{Joint Certification for Attributed Graphs: Beyond Topology-Only Robustness.}}
+\cv{ICML 2026}{\textbf{B.\ Delattre}, H.\ Wu, P.\ Caillon, W.Y.B.\ Lim, Y.\ Cao. \textit{Certified Robustness under Heterogeneous Perturbations via Hybrid Randomized Smoothing.}}
+\cv{ICML 2026}{E.\ Fagnou, P.\ Caillon, \textbf{B.\ Delattre}, A.\ Allauzen. \textit{Trading Complexity for Expressivity Through Structured Generalized Linear Token Mixing.}}
+\cv{ICLR 2026}{P.\ Caillon, E.\ Fagnou, \textbf{B.\ Delattre}, A.\ Allauzen. \textit{Scaling Direct Feedback Learning with Theoretical Guarantees.}}
+\cv{ECAI 2025}{P.\ Caillon, A.\ Colagrande, E.\ Fagnou, \textbf{B.\ Delattre}, A.\ Allauzen. \textit{Forward Only Learning for Orthogonal Neural Networks of Any Depth.} Vol.\ 413, pp.\ 2041–2048.}
+\cv{AISTATS 2025}{\textbf{B.\ Delattre}, P.\ Caillon, E.\ Fagnou, Q.\ Barthélemy, A.\ Allauzen. \textit{Bridging the Theoretical Gap in Randomized Smoothing.}}
+\cv{ICLR 2025}{E.\ Fagnou, P.\ Caillon, \textbf{B.\ Delattre}, A.\ Allauzen. \textit{Accelerated Training through Iterative Gradient Propagation Along the Residual Path.} \textbf{(Oral)}}
+\cv{ACL 2024}{E.\ Fagnou, P.\ Caillon, \textbf{B.\ Delattre}, A.\ Allauzen. \textit{Chain and Causal Attention for Efficient Entity Tracking.}}
+\cv{ICLR 2024}{\textbf{B.\ Delattre}, A.\ Araujo, Q.\ Barthélemy, A.\ Allauzen. \textit{The Lipschitz–Variance–Margin Tradeoff for Enhanced Randomized Smoothing.}}
+\cv{ICML 2023}{\textbf{B.\ Delattre}, Q.\ Barthélemy, A.\ Araujo, A.\ Allauzen. \textit{Efficient Bound of Lipschitz Constant for Convolutional Layers by Gram Iteration.}}
+\cv{ICLR 2023}{A.\ Araujo, A.\ Havens, \textbf{B.\ Delattre}, A.\ Allauzen, B.\ Hu. \textit{A Unified Algebraic Perspective on Lipschitz Neural Networks.} \textbf{(Spotlight)}}
+\cv{ICML 2022}{L.\ Meunier$^{*}$, \textbf{B.\ Delattre}$^{*}$, A.\ Araujo$^{*}$, A.\ Allauzen. \textit{A Dynamical System Perspective for Lipschitz Neural Networks.} \textbf{(Oral)}}
+
+%-------------------------------------------------------- research funding -----
+\section{Research Funding \& Fellowships}
+\cv{2026–Present}{\textbf{JSPS Postdoctoral Fellowship for Research in Japan (Standard)}, Japan Society for the Promotion of Science; Institute of Science Tokyo, Japan. Fellowship commenced September 2026.}
+\cv{2026}{\textbf{MEXT SPReAD grant} (Supporting Pioneering Research through AI for 1,000 Discovery challenges), AI for Science research funding.}
+% DSAI research group (distinct from the DSAI education center): https://dsai.c.titech.ac.jp/home-en/
+\cv{2025–2026}{\textbf{DSAI Young Researcher Activity Support Program}, Data Science \& Artificial Intelligence Research Group for Social Good, Institute of Science Tokyo, Japan (internal research grant for young researchers).}
+\cv{2022–2025}{CIFRE doctoral funding (industry–academia), Foxstream / ANRT, France.}
+% \cv{20XX}{[PLACEHOLDER: grants, cloud credits, compute allocations — e.g. TSUBAME]}
+
+%----------------------------------------------------- research supervision ----
+\section{Research Supervision}
+\cv{Apr–Sep 2024}{Primary advisor (with A.\ Allauzen and P.\ Caillon) of \href{https://team.inria.fr/i4s/team-members/zakariae-moutaouakil/}{\textbf{Zakariae Moutaouakil}} (M2, Université Paris Cité), LAMSADE internship on randomized-smoothing robustness certificates.}
+\cv{2025–Present}{Co-advisor (with Y.\ Cao) of \textbf{Hengyu Wu} (Master, Institute of Science Tokyo) at the TDSAI Lab, on certified robustness for multimodal foundation models and VLMs.}
+\cv{2026–Present}{Co-advisor (with Asst.\ Prof.\ W.Y.B.\ Lim) of \textbf{Foo Ping} (Master, NTU Singapore), on certified robustness for RAG retrieval.}
+
+%--------------------------------------------------------------- teaching ------
+\section{Teaching}
+\cv{2023–2025}{\textbf{Trustworthy Machine Learning in Practice} (Lecturer), Executive Master, Université Paris-Dauphine PSL.}
+\cv{2026}{\textbf{Guest lecture} on \textit{Adversarial Robustness in Machine Learning}, in Assoc.\ Prof.\ Yang Cao's database course (Master's level), Institute of Science Tokyo, Japan.}
+
+%----------------------------------------------------------- invited talks -----
+\newpage
+\section{Invited Talks \& Tutorials}
+% Event and dates verified from sources_docs/Invitation Letter_Blaise Delattre.pdf.
+% Talk delivered per owner; invitation does not specify a talk title.
+\cv{Jul 2026}{\textbf{Invited talk}, Yunnan International Workshop on Trustworthy Foundation Models (YTFM2026), Kunming, China, 16–19 July 2026 (NSFC–JSPS collaborative research workshop).}
+\cv{2025}{\textbf{Tutorial} (accepted): \textit{Robust Certificates for Neural Networks}, ADC 2025, Bali, Indonesia.}
+\cv{2025}{\textbf{Invited talk}: \textit{Toward Certified Robustness in Foundation Models}, KTFM Workshop, Kobe, Japan.}
+\cv{2025}{\textbf{Invited talk}: \textit{Lipschitz-Constrained Networks for Certified Robustness}, JSPS–NSFC Joint Research Workshop.}
+\cv{2024}{Reading group: \textit{Spectral Norm Estimation in Deep Learning}, ENS Lyon, France.}
+\cv{2023}{Reading group: \textit{The Lipschitz–Variance–Margin Tradeoff}, UIUC Adversarial Attacks RG (online).}
+\cv{2022–23}{Conference / workshop talks: \textit{A Dynamical System Perspective for Lipschitz Neural Networks}, ICML 2022 (Baltimore), SCAI 2023 (Paris).}
+
+%-------------------------------------------------------- academic service -----
+\section{Academic Service}
+\cv{Area Chair}{\textbf{ICLR 2027}.}
+\cv{Conference reviewer}{NeurIPS (2025–2026), ICLR (2025–2026), ICML (2024–2026), AISTATS (2026), AAAI (2026), KDD AI4Science (2026), L4DC (2024).}
+\cv{Journal reviewer}{\textbf{Transactions on Machine Learning Research (TMLR)}, IEEE TAC, Neurocomputing (2026), IPSJ Trans.\ on Databases (TOD, 2026), ACML Journal Track (2024).}
+\cv{PC member}{ICICS 2026 (International Conference on Information and Communications Security).}
+\cv{Chair}{Poster \& Encore Track Chair, ADMA 2025, Kyoto, Japan.}
+
+%-------------------------------------------------------- technical skills -----
+\section{Technical Skills \& Languages}
+\cv{Programming}{Python, PyTorch.}
+\cv{Languages}{French (native), English (fluent).}
+
+%---------------------------------------------------------------- referees -----
+\section{Referees}
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+    \textbf{Prof.\ Alexandre Allauzen}                & \textbf{Assoc.\ Prof.\ Yang Cao}                     \\
+    PhD supervisor                                    & Postdoctoral host                                    \\
+    ESPCI Paris PSL / Université Paris-Dauphine PSL   & Institute of Science Tokyo                           \\
+    \href{mailto:alexandre.allauzen@dauphine.psl.eu}{alexandre.allauzen@dauphine.psl.eu} & \href{mailto:cao@c.titech.ac.jp}{cao@c.titech.ac.jp} \\[8pt]
+    \textbf{Asst.\ Prof.\ Wei Yang Bryan Lim}         & \\
+    Collaborator                                      & \\
+    College of Computing \& Data Science, NTU Singapore & \\
+    \href{mailto:bryan.limwy@ntu.edu.sg}{bryan.limwy@ntu.edu.sg} & \\[8pt]
+    \textbf{Dr.\ Quentin Barthélemy}                  & \textbf{Dr.\ Alexandre Araujo}                       \\
+    PhD co-supervisor                                 & Collaborator                                         \\
+    \href{mailto:q.barthelemy@gmail.com}{q.barthelemy@gmail.com} & \href{mailto:aaraujo001@gmail.com}{aaraujo001@gmail.com}    \\
+\end{tabularx}
+
+\end{document}

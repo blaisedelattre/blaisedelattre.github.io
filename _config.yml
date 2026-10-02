@@ -178,6 +178,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - CV/                                 # editable LaTeX CV source; public PDF lives in assets/pdf/
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md

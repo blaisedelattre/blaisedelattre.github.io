@@ -1,11 +1,11 @@
 cv:
   name: Blaise Delattre
-  label: Postdoctoral researcher
+  label: JSPS Postdoctoral Fellow
   email: bldelattre@gmail.com
   location: Tokyo, Japan
   image: ""
   summary: >
-    Postdoctoral researcher at the Institute of Science Tokyo, in Prof. Yang Cao's
+    JSPS Postdoctoral Fellow at the Institute of Science Tokyo, in Prof. Yang Cao's
     group, working on trustworthy AI: certified robustness, randomized smoothing,
     Lipschitz-controlled neural networks, and robust foundation-model systems.
     PhD from MILES, LAMSADE, Université Paris-Dauphine PSL, on
@@ -32,12 +32,73 @@ cv:
 
     Experience:
       - company: Institute of Science Tokyo
+        position: JSPS Postdoctoral Fellow — group of Prof. Yang Cao
+        location: Tokyo, Japan
+        startDate: "2026-09"
+        endDate: Present
+        summary: >
+          Theory and methods for certified robustness of multimodal AI systems.
+      - company: Institute of Science Tokyo
         position: Postdoctoral Researcher — group of Prof. Yang Cao
         location: Tokyo, Japan
         startDate: "2025-10"
+        endDate: "2026-08"
         summary: >
           Trustworthy AI: certified robustness, randomized smoothing,
           Lipschitz-controlled neural networks, and robust foundation-model systems.
 
-# NOTE: detailed CV content lives in the linked PDF (assets/pdf/resume_BlaiseDelattre.pdf).
+    Awards:
+      - title: JSPS Postdoctoral Fellowship for Research in Japan (Standard)
+        awarder: Japan Society for the Promotion of Science
+        date: "2026"
+        url: https://www.jsps.go.jp/english/e-fellow/e-ippan/adoption/2026.html
+        summary: >
+          FY2026 second recruitment: 5.6% acceptance rate
+          (125 selected from 2,231 applications).
+
+    Recent Publications:
+      - bullet: >
+          **NeurIPS 2026 — Joint Certification for Attributed Graphs:
+          Beyond Topology-Only Robustness**.
+          Blaise Delattre<sup>*</sup>, Hengyu Wu<sup>*</sup>, Wei Yang Bryan Lim, Yang Cao.
+          <sup>*</sup> Equal contribution.
+      - bullet: "[Complete publication list](/publications/)."
+
+    Research Funding and Fellowships:
+      - bullet: >
+          **2026–Present — JSPS Postdoctoral Fellowship for Research in Japan (Standard)**,
+          Japan Society for the Promotion of Science; Institute of Science Tokyo.
+          Fellowship commenced September 2026.
+      - bullet: >
+          **2026 — [MEXT SPReAD grant](https://www.mext.go.jp/aifors_spread/)**
+          (Supporting Pioneering Research through AI for 1,000 Discovery challenges),
+          AI for Science research funding.
+      - bullet: >
+          **2025–2026 — DSAI Young Researcher Activity Support Program**,
+          [Data Science & Artificial Intelligence Research Group for Social Good](https://dsai.c.titech.ac.jp/home-en/),
+          Institute of Science Tokyo. Internal research grant for young researchers.
+      - bullet: >
+          **2022–2025 — CIFRE doctoral funding**, Foxstream / ANRT, France.
+
+    Academic Service:
+      - bullet: "**Area Chair:** ICLR 2027."
+      - bullet: >
+          **Conference reviewer:** NeurIPS (2025–2026), ICLR (2025–2026),
+          ICML (2024–2026), AISTATS (2026), AAAI (2026), KDD AI4Science (2026),
+          L4DC (2024).
+      - bullet: >
+          **Journal reviewer:** Transactions on Machine Learning Research (TMLR),
+          IEEE TAC, Neurocomputing (2026), IPSJ Transactions on Databases (TOD, 2026),
+          ACML Journal Track (2024).
+      - bullet: "**Program Committee member:** ICICS 2026 (International Conference on Information and Communications Security)."
+      - bullet: "**Track Chair:** Poster & Encore Track, ADMA 2025, Kyoto, Japan."
+
+    Invited Talks and Tutorials:
+      - bullet: >
+          **16–19 July 2026 — Invited talk**, Yunnan International Workshop on
+          Trustworthy Foundation Models (YTFM2026), Kunming, China.
+          NSFC–JSPS collaborative research workshop.
+
+# NOTE: the complete publication list and detailed CV live in the linked PDF
+# (assets/pdf/resume_BlaiseDelattre.pdf), authored in CV/main_cv.tex.
 # The previous Einstein placeholder structure is preserved at _data/_archive_cv_einstein.yml.
