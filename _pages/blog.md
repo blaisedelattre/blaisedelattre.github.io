@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: false       # hidden — no real posts yet. Re-enable once _posts/ has real content.
+nav: false # hidden — no real posts yet. Re-enable once _posts/ has real content.
 published: false # hidden — no real posts yet. Re-enable once _posts/ has real content.
 nav_order: 1
 pagination:

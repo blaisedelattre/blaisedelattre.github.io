@@ -178,7 +178,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  - CV/                                 # editable LaTeX CV source; public PDF lives in assets/pdf/
+  - CV/ # editable LaTeX CV source; public PDF lives in assets/pdf/
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
@@ -199,12 +199,12 @@ exclude:
   - readme_preview/
   - vendor
   # --- Owner-hidden template demo content (re-enable any of these once real content exists) ---
-  - _posts/                              # demo blog posts (al-folio sample); blog page is published:false
-  - _projects/                           # demo project cards; projects page is published:false
-  - _books/                              # demo bookshelf entries; books page is published:false
-  - _bibliography/_archive_einstein.bib  # original Einstein bib preserved here
-  - _data/_archive_cv_einstein.yml       # original Einstein CV data preserved here
-  - public_html_lamsade/                 # source assets imported from the old LAMSADE page
+  - _posts/ # demo blog posts (al-folio sample); blog page is published:false
+  - _projects/ # demo project cards; projects page is published:false
+  - _books/ # demo bookshelf entries; books page is published:false
+  - _bibliography/_archive_einstein.bib # original Einstein bib preserved here
+  - _data/_archive_cv_einstein.yml # original Einstein CV data preserved here
+  - public_html_lamsade/ # source assets imported from the old LAMSADE page
 keep_files:
   - CNAME
   - .nojekyll

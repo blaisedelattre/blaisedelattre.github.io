@@ -102,21 +102,21 @@ Edit any file under `_pages/`, `_news/`, `_bibliography/`, `assets/`, etc. — t
 
 ### 2. Where to edit common things
 
-| What I want to change             | File / folder                                       |
-| --------------------------------- | --------------------------------------------------- |
-| Homepage bio, profile pic, links  | [_pages/about.md](_pages/about.md)                  |
-| News items (homepage feed)        | [_news/](_news/) — one `announcement_N.md` per item |
-| Publications list                 | [_bibliography/papers.bib](_bibliography/papers.bib) |
-| Profile image                     | [assets/img/](assets/img/) (referenced by filename in `about.md` frontmatter) |
-| CV / PDFs                         | [assets/pdf/](assets/pdf/)                          |
-| Social icons, site title, URL    | [_config.yml](_config.yml)                          |
+| What I want to change            | File / folder                                                                 |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| Homepage bio, profile pic, links | [\_pages/about.md](_pages/about.md)                                           |
+| News items (homepage feed)       | [\_news/](_news/) — one `announcement_N.md` per item                          |
+| Publications list                | [\_bibliography/papers.bib](_bibliography/papers.bib)                         |
+| Profile image                    | [assets/img/](assets/img/) (referenced by filename in `about.md` frontmatter) |
+| CV / PDFs                        | [assets/pdf/](assets/pdf/)                                                    |
+| Social icons, site title, URL    | [\_config.yml](_config.yml)                                                   |
 
 ### 3. Invariants — never break these
 
 - `_config.yml` **must** keep:
   ```yaml
   url: https://blaisedelattre.github.io
-  baseurl:    # empty — this is a user site, not a project site
+  baseurl: # empty — this is a user site, not a project site
   ```
   Reverting these to the upstream `alshedivat` / `/al-folio` defaults breaks every asset and link on the deployed site.
 - Do **not** edit `_layouts/`, `_includes/`, `_sass/`, or `assets/js/` unless I'm consciously forking the theme. Stick to content folders.
@@ -151,26 +151,26 @@ The al-folio template ships with demo pages and demo collections (Einstein bio, 
 
 How hiding works here:
 
-| Mechanism                                | Effect                                                                                    |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `published: false` in page frontmatter   | Jekyll skips the page entirely. `/the-permalink/` returns 404.                            |
-| `nav: false` in page frontmatter         | Page (if published) is rendered but removed from the top navbar.                          |
-| `exclude:` in `_config.yml`              | Files / directories are not read by Jekyll at all. Best for whole demo-content folders.   |
-| File renamed with leading `_`            | Jekyll ignores files starting with `_` outside declared collections (e.g. archived bibs). |
+| Mechanism                              | Effect                                                                                    |
+| -------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `published: false` in page frontmatter | Jekyll skips the page entirely. `/the-permalink/` returns 404.                            |
+| `nav: false` in page frontmatter       | Page (if published) is rendered but removed from the top navbar.                          |
+| `exclude:` in `_config.yml`            | Files / directories are not read by Jekyll at all. Best for whole demo-content folders.   |
+| File renamed with leading `_`          | Jekyll ignores files starting with `_` outside declared collections (e.g. archived bibs). |
 
 Currently hidden:
 
-| What                                | Where                                                  | How to re-enable                                                          |
-| ----------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------- |
-| Projects page + demo project cards  | [_pages/projects.md](_pages/projects.md) + `_projects/` excluded | Remove `published: false` + `nav: false` from frontmatter; un-exclude `_projects/` in `_config.yml`; add real projects under `_projects/`. |
-| Repositories page                   | [_pages/repositories.md](_pages/repositories.md)       | Remove `published: false` + `nav: false`; populate `github_repos:` in [_data/repositories.yml](_data/repositories.yml). |
-| People / lab profiles               | [_pages/profiles.md](_pages/profiles.md)               | Remove `published: false` + `nav: false`; replace the placeholder `profiles:` block with real entries; replace `about_einstein.md` references. |
-| Blog index + demo posts             | [_pages/blog.md](_pages/blog.md) + `_posts/` excluded  | Remove `published: false` + `nav: false`; un-exclude `_posts/` in `_config.yml`; add real posts under `_posts/`. |
-| Bookshelf + demo book               | [_pages/books.md](_pages/books.md) + `_books/` excluded | Remove `published: false`; un-exclude `_books/`; replace `the_godfather.md` with real entries. |
-| Submenus dropdown (bookshelf / blog) | [_pages/dropdown.md](_pages/dropdown.md)               | Remove `published: false` + `nav: false` after re-enabling at least one child page.       |
-| Einstein bibliography               | `_bibliography/_archive_einstein.bib`                  | Rename back to a `.bib` file Jekyll-Scholar picks up, or merge entries into `papers.bib`. |
-| Einstein CV structure               | `_data/_archive_cv_einstein.yml`                       | Copy the relevant sections back into `_data/cv.yml`.                       |
-| LAMSADE source HTML/assets          | `public_html_lamsade/` (excluded)                      | Reference material; not meant to be served — keep excluded.                |
+| What                                 | Where                                                             | How to re-enable                                                                                                                               |
+| ------------------------------------ | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Projects page + demo project cards   | [\_pages/projects.md](_pages/projects.md) + `_projects/` excluded | Remove `published: false` + `nav: false` from frontmatter; un-exclude `_projects/` in `_config.yml`; add real projects under `_projects/`.     |
+| Repositories page                    | [\_pages/repositories.md](_pages/repositories.md)                 | Remove `published: false` + `nav: false`; populate `github_repos:` in [\_data/repositories.yml](_data/repositories.yml).                       |
+| People / lab profiles                | [\_pages/profiles.md](_pages/profiles.md)                         | Remove `published: false` + `nav: false`; replace the placeholder `profiles:` block with real entries; replace `about_einstein.md` references. |
+| Blog index + demo posts              | [\_pages/blog.md](_pages/blog.md) + `_posts/` excluded            | Remove `published: false` + `nav: false`; un-exclude `_posts/` in `_config.yml`; add real posts under `_posts/`.                               |
+| Bookshelf + demo book                | [\_pages/books.md](_pages/books.md) + `_books/` excluded          | Remove `published: false`; un-exclude `_books/`; replace `the_godfather.md` with real entries.                                                 |
+| Submenus dropdown (bookshelf / blog) | [\_pages/dropdown.md](_pages/dropdown.md)                         | Remove `published: false` + `nav: false` after re-enabling at least one child page.                                                            |
+| Einstein bibliography                | `_bibliography/_archive_einstein.bib`                             | Rename back to a `.bib` file Jekyll-Scholar picks up, or merge entries into `papers.bib`.                                                      |
+| Einstein CV structure                | `_data/_archive_cv_einstein.yml`                                  | Copy the relevant sections back into `_data/cv.yml`.                                                                                           |
+| LAMSADE source HTML/assets           | `public_html_lamsade/` (excluded)                                 | Reference material; not meant to be served — keep excluded.                                                                                    |
 
 Pages I intentionally **keep visible** because I have real content for them: [about](_pages/about.md), [publications](_pages/publications.md) (driven by [papers.bib](_bibliography/papers.bib)), [teaching](_pages/teaching.md), [CV](_pages/cv.md), [news](_pages/news.md).
 
